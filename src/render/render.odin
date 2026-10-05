@@ -424,7 +424,7 @@ compileShader :: proc(kind : u32, src : cstring) -> u32 {
 	if status == 0 {
 		buf : [2048]byte
 		gl.GetShaderInfoLog(shader, i32(len(buf)), nil, &buf[0])
-		fmt.eprintln("the fucking shader CAN'T be converted by the GL compilor into a bunch of shit bytecode that can be executed by the GPU(maybe a erotic RTX5090 just like a stunner of G cup and smooth pussy). A JIT would have compiled the same shit at runtime, called it a feature, and blamed deoptimization when it ran slow. You don't even get that excuse.", string(buf[:]))
+		fmt.eprintln("the fucking shader CAN'T be converted by the GL compilor into a bunch of shit bytecode that can be executed by the GPU(maybe a erotic RTX5090 just like a beauty). A JIT would have compiled the same shit at runtime, called it a feature, and blamed deoptimization when it ran slow. You don't even get that excuse.", string(buf[:]))
 		gl.DeleteShader(shader)
 		return 0
 	}
